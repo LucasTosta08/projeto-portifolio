@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Portfólios</title>
+    <link rel="stylesheet" href="/projeto-portifolio/projeto portifólio/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Profissional / Perfil</h1>
+        </header>
+
+        <!-- Formulário de Cadastro (inicialmente visível) -->
+        <section id="cadastroSection">
+            <p>Crie seu perfil e divulgue seu portfólio!</p>
+            <form id="cadastroForm">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="areaAtuacao">Área de Atuação:</label>
+                    <select id="areaAtuacao" name="areaAtuacao" required>
+                        <option value="">Selecione...</option>
+                        <option value="desenvolvimento">Desenvolvimento Web</option>
+                        <option value="design">Design UI/UX</option>
+                        <option value="dados">Ciência de Dados</option>
+                        <option value="infra">Infraestrutura</option>
+                        <option value="outra">Outra</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedin">URL do LinkedIn (opcional):</label>
+                    <input type="url" id="linkedin" name="linkedin">
+                </div>
+
+                <div class="form-group">
+                    <label for="portfolio">URL do Portfólio (opcional):</label>
+                    <input type="url" id="portfolio" name="portfolio">
+                </div>
+                <div class="form-group">
+                    <label for="github">Github:</label>
+                    <input type="url" id="github" name="github">
+                </div>
+
+                <button type="submit">Cadastrar</button>
+                <a href="index.html">Voltar ao Login</a>
+
+            </form>
+        </section>
+
+        <!-- Seção de Perfil (inicialmente oculta) -->
+        <section id="perfilSection" style="display: none;">
+            <h2>Seu Perfil</h2>
+            <div id="perfilDados">
+                <!-- Dados do perfil serão inseridos aqui via JavaScript -->
+            </div>
+            <button id="editarCadastro">Editar Cadastro</button>
+           
+        </section>
+
+        <footer>
+            <p>© 2024 Plataforma de Portfólios</p>
+        </footer>
+    </div>
+
+    <script src="/projeto-portifolio/projeto portifólio/js/script.js"></script>
+</body>
+</html>
